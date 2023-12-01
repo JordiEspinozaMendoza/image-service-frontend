@@ -5,6 +5,7 @@ import Image from "next/image";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Navbar from "./navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     data: null,
   });
 
+  
   const handleFetchServerStatus = async () => {
     try {
       setFetchServerStatus({ loading: true, error: false, data: null });
@@ -48,6 +50,7 @@ export default function RootLayout({ children }) {
       </head>
 
       <body className={inter.className}>
+        <Navbar />
         <ToastContainer />
 
         {fetchServerStatus.loading ? (
