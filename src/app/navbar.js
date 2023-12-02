@@ -1,18 +1,14 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul style={{ display: 'flex', listStyle: 'none', padding: 0 }}>
-        <li style={{ marginRight: '10px' }}>
-          <Link href="/">
-          Upload Image
-          </Link>
+    <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+      <ul className="flex gap-4">
+        <li>
+          <Link href="/">Upload Image</Link>
         </li>
         <li>
-          <Link href="/images">
-            Images Table
-          </Link>
+          <Link href="/images">Images Table</Link>
         </li>
       </ul>
     </nav>

@@ -20,7 +20,7 @@ export default async function Images() {
   return (
     <div className="flex flex-col items-center p-24">
       <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead>
+        <thead className="border-b bg-gray-50 dark:border-gray-600 dark:bg-gray-800">
           <tr>
             <th className="px-4 py-2">ID</th>
             <th className="px-4 py-2">Filename</th>
